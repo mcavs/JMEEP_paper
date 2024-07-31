@@ -53,9 +53,9 @@ You can used pre-saved experiments results in the files `data_rashomon.csv` and 
 
 
 
-<img src="https://github.com/mcavs/HEXED2024_paper/blob/main/Plots/plot1.png" width="800">
+<img src="https://github.com/mcavs/JMEEP_paper/blob/main/Figure3.png" width="800">
 
-Run [plot.R](https://github.com/mcavs/HEXED2024_paper/blob/main/plot.R) to reproduce `Figure 3`.
+Run [plot.R](https://github.com/mcavs/JMEEP_paper/blob/main/plot.R) to reproduce `Figure 3`.
 
 
 
