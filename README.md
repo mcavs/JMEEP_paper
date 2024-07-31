@@ -5,17 +5,20 @@ This repository consists the supplemental materials of the paper "An Effect Anal
 The following steps can be runned to reproduce the result in the paper:
 
 1. Install the essential packages [install_packages.R](https://github.com/mcavs/JMEEP_paper/blob/main/install_packages.R)
-2. Import the dataset [data_import.R](https://github.com/mcavs/JMEEP_paper/blob/main/data_import.R)
-3. Preprocess the imported dataset [data_preprocess.R](https://github.com/mcavs/JMEEP_paper/blob/main/data_preprocess.R)
+2. Import the dataset [data_import.R](https://github.com/mcavs/JMEEP_paper/blob/main/import_dataset.R)
+3. Preprocess the imported dataset [data_preprocess.R](https://github.com/mcavs/JMEEP_paper/blob/main/data_preprocessing.R)
 4. Split the dataset as train and test set [data_splitting.R](https://github.com/mcavs/JMEEP_paper/blob/main/data_splitting.R)
-5. Train the model on the train set [modeling.R](https://github.com/mcavs/JMEEP_paper/blob/main/modeling.R)
-6. Generate counterfactuals using the MOC method [modeling_with_ranger.R](https://github.com/mcavs/JMEEP_paper/blob/main/MOC.R)
-7. Generate counterfactuals using the NICE method based on proximity [NiCE_pr.R](https://github.com/mcavs/JMEEP_paper/blob/main/NiCE_pr.R)
-8. Generate counterfactuals using the NICE method based on sparsity [NiCE_sp.R](https://github.com/mcavs/JMEEP_paper/blob/main/NiCE_sp.R)
-9. Generate counterfactuals using the WI method [WhatIf.R](https://github.com/mcavs/JMEEP_paper/blob/main/WhatIf.R)
-10. Combine the evaluation metrics on the generated counterfactuals [combine_evals.R](https://github.com/mcavs/JMEEP_paper/blob/main/combine_evals.R)
-11. Summarize the results in plots [plot.R](https://github.com/mcavs/JMEEP_paper/blob/main/plot.R)
-12. Conduct the statistical hypothesis tests on the results [test.R](https://github.com/mcavs/JMEEP_paper/blob/main/test.R)
+5. Balance the train set [data_splitting.R](https://github.com/mcavs/JMEEP_paper/blob/main/balancing.R)
+6. Train the models on the train set [modeling.R](https://github.com/mcavs/JMEEP_paper/blob/main/modeling.R)
+7. Train the tuned models in terms of hyperparameters [tuned_models.R](https://github.com/mcavs/JMEEP_paper/blob/main/tuned_models.R)
+8. Generate counterfactuals using the MOC method [moc_generate.R](https://github.com/mcavs/JMEEP_paper/blob/main/moc_generate.R)
+9. Generate counterfactuals using the NICE method based on proximity [nicepr_generate.R](https://github.com/mcavs/JMEEP_paper/blob/main/nicepr_generate.R)
+10. Generate counterfactuals using the NICE method based on sparsity [nicesp_generate.R](https://github.com/mcavs/JMEEP_paper/blob/main/nicesp_generate.R)
+11. Generate counterfactuals using the WI method [wi_generate.R](https://github.com/mcavs/JMEEP_paper/blob/main/wi_generate.R)
+    
+13. Combine the evaluation metrics on the generated counterfactuals [combine_evals.R](https://github.com/mcavs/JMEEP_paper/blob/main/combine_evals.R)
+14. Summarize the results in plots [plot.R](https://github.com/mcavs/JMEEP_paper/blob/main/plot.R)
+15. Conduct the statistical hypothesis tests on the results [test.R](https://github.com/mcavs/JMEEP_paper/blob/main/test.R)
 
 The steps above can be runned simply as in [RunAll.R](https://github.com/mcavs/JMEEP_paper/blob/main/RunAll.R)
   
