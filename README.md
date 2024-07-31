@@ -27,20 +27,16 @@ We used the Open University Learning Analytics dataset - information about 22 co
 
 | Variable                | Description                                                                         | Class        | Values          |
 |-------------------------|-------------------------------------------------------------------------------------|--------------|-----------------|
-| gender                  | student’s gender                                                                    | categorical  | {0, 1}          |
-| region                  | the geographic region, where the student lived while taking the module presentation | categorical  | {1, 2, ..., 13} |
-| education               | the highest student education level on entry to the module presentation             | categorical  | {1, 2, ..., 5}  |
-| imd_band                | the IMD band of the place where the student lived during the module presentation    | categorical  | {1, 2, ..., 10} |
-| age_band                | a band of student’s age                                                             | categorical  | {1, 2, 3}       |
-| num_of_prev_attempts    | the number of how many times the student has attempted this module                  | numeric      | [0, 4]          |
-| credits                 | the total number of credits for the modules the student is currently studying       | numeric      | [60, 360]       |
-| disability              | indicates whether the student has declared a disability                             | categorical  | {0, 1}          |
-| assessment_results      | the weighted sum of all previous assessments                                        | numeric      | [24.25, 72.75]  |
-| n\_clicks\_disc\_forum  | the number of clicks on discussion forum                                            | numeric      | [0, 7670]       |
-| n\_clicks\_disc\_hpage  | the number of clicks on discussion homepage                                         | numeric      | [4, 3150]       |
-| n\_clicks\_assignments  | the number of clicks on assignments                                                 | numeric      | [0, 7193]       |
-| n\_clicks\_quizzes      | the number of clicks on quizzes                                                     | numeric      | [0, 4857]       |
-| n\_clicks\_course\_page | the number of clicks on course page                                                 | numeric      | [0, 1196]       |
+| final_result            | student’s final exam result                                                         | categorical  | {Fail, Pass}    |
+| week_minus4             | the number of clicks four  weeks before the course starts                           | numeric      | [0, X]          |
+| week_minus3             | the number of clicks three weeks before the course starts                           | numeric      | [0, X]          |
+| week_minus2             | the number of clicks two weeks before the course starts                             | numeric      | [0, X]          |
+| week_minus1             | the number of clicks one week before the course starts                              | numeric      | [0, X]          |
+| week_0                  | the number of clicks before the course starts                                       | numeric      | [0, X]          |
+| week_1                  | the number of clicks one week after the course starts                               | numeric      | [0, X]          |
+| ...                     | ...                                                                                 | ...          | ...             |
+| week_37                 | the number of clicks thirty-seven weeks after the course starts                     | numeric      | [0, X]          |
+
 
 The dataset given in `data/FFF_2013J_data.csv`. It can be prepared using the .Rmd file `data/data_preparation.Rmd`.
 
