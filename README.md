@@ -23,7 +23,7 @@ The following steps can be runned to reproduce the result in the paper:
 The steps above can be runned simply as in [RunAll.R](https://github.com/mcavs/JMEEP_paper/blob/main/RunAll.R)
   
 ## Data 
-We used the Open University Learning Analytics dataset - information about 22 courses, 32,593 students, their assessment results, and logs of their interactions with the virtual learning environment. It is collected in the Open University from 2013 and 2014. We followed the same way in the variable and data selection in [Ramos et al. (2023)](https://doi.org/10.1002/widm.1479). We used the dataset for a STEM course, named `FFF` in the original data source, conducted in 2013 with 2,283 students. It consists of 14 predictors, 6 of which are categorical variables encoded numerically given in the following table. The target is a binary variable `status` consisting of `pass` and `fail`. It is converted from the `score` variable in the original dataset which ranges between 0 and 100. A score lower than 40 is coded as a `fail`.
+We used the Open University Learning Analytics dataset - information about 22 courses, 32,593 students, their assessment results, and logs of their interactions with the virtual learning environment. It is collected in the Open University from 2013 and 2014. We used the dataset for a STEM course, named `DDD` in the original data source, conducted in 2013 and 2014 with 2,283 students. It consists of 42 numeric predictors show the number of clicks in corresponding week given in the following table. The target is a binary variable `final_result` consisting of `pass` and `fail`. 
 
 | Variable                | Description                                                                         | Class        | Values          |
 |-------------------------|-------------------------------------------------------------------------------------|--------------|-----------------|
@@ -38,7 +38,7 @@ We used the Open University Learning Analytics dataset - information about 22 co
 | week_37                 | the number of clicks thirty-seven weeks after the course starts                     | numeric      | [0, X]          |
 
 
-The dataset given in `data/FFF_2013J_data.csv`. It can be prepared using the .Rmd file `data/data_preparation.Rmd`.
+The dataset given in `dataset.csv`. 
 
 
 ## Results
@@ -47,24 +47,17 @@ The generated counterfactuals by each method and their quality criteria are stor
 
 
 ## Plots
-There are two plots `Figures 3` and `4` in the paper. 
+There is a plot `Figure 3`
 
 You can used pre-saved experiments results in the files `data_rashomon.csv` and `data_VDisc.csv` if you do not have enough computation power to re-run the experiments.
 
 
-### Figure 3
-The averages of the quality metrics for the methods.
 
 <img src="https://github.com/mcavs/HEXED2024_paper/blob/main/Plots/plot1.png" width="800">
 
 Run [plot.R](https://github.com/mcavs/HEXED2024_paper/blob/main/plot.R) to reproduce `Figure 3`.
 
 
-### Figure 4 
-The distributions of the quality metrics for the methods
 
-<img src="https://github.com/mcavs/HEXED2024_paper/blob/main/Plots/plot2.png" width="800">
-
-Run [plot.R](https://github.com/mcavs/HEXED2024_paper/blob/main/plot.R) to reproduce `Figure 4`.
 
 
