@@ -49,10 +49,6 @@ The generated counterfactuals by each method and their quality criteria are stor
 ## Plots
 There is a plot `Figure 3`
 
-You can used pre-saved experiments results in the files `data_rashomon.csv` and `data_VDisc.csv` if you do not have enough computation power to re-run the experiments.
-
-
-
 <img src="https://github.com/mcavs/JMEEP_paper/blob/main/Figure3.png" width="800">
 
 Run [plot.R](https://github.com/mcavs/JMEEP_paper/blob/main/plot.R) to reproduce `Figure 3`.
