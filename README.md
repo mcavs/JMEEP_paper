@@ -46,12 +46,10 @@ The dataset given in `dataset.csv`.
 The generated counterfactuals by each method and their quality criteria are stored in `eval_files` folder. The files in this folder created in Steps 6-9 above.
 
 
-## Plots
-There is a plot `Figure 3`
+## Plot
 
 <img src="https://github.com/mcavs/JMEEP_paper/blob/main/Figure3.png" width="800">
 
-Run [plot.R](https://github.com/mcavs/JMEEP_paper/blob/main/plot.R) to reproduce `Figure 3`.
 
 
 
